@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Link from "next/link";
-import { Linkedin } from "./team";
 
 const Footer: FC = () => {
   return (
@@ -15,7 +14,6 @@ const Footer: FC = () => {
           target="_blank"
           className="opacity-70"
         >
-          <Linkedin />
         </Link>
       </div>
     </footer>

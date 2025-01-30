@@ -1,14 +1,6 @@
 import Hero from "@/components/hero";
-// import Logos from "@/components/logos";
-import Team from "@/components/team";
-import Navbar from "@/components/navbar";
 import grain from "@/../public/grain.jpg";
-import Services from "@/components/services";
-// import LinearCards from "@/components/linear";
-// import Customers from "@/components/customers";
-import Blog from "@/components/blog";
-import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -20,16 +12,9 @@ export default function Home() {
           backgroundImage: `url(${grain.src})`,
         }}
       ></div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <Services />
-      {/* <LinearCards/> */}
-      <Team />
-      {/* <Customers /> */}
-      <Testimonials />
-      <Blog />
-      <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

@@ -18,8 +18,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Vandana Singh and Associates",
-  description: "A compliance law company based in India",
+  title: "Renesh Rajendran | Graphic Designer",
+  description: "Renesh Rajendra's portfolio | Graphic Designer based in Bengaluru, India",
 };
 
 export default function RootLayout({
