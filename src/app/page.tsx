@@ -1,8 +1,8 @@
 'use client'
 import Hero from "@/components/hero";
 import grain from "@/../public/grain.jpg";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+// import Navbar from "@/components/navbar";
+// import Footer from "@/components/footer";
 import Scene from "@/components/background";
 import { motion } from "motion/react"
 
