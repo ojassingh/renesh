@@ -131,7 +131,7 @@ const Gradient = () => {
       u_time: { value: 0.0 },
       u_mouse: { value: new Vector2(0, 0) },
       u_bg: { value: new Color("#F8F9FA") },      
-      u_colorA: { value: new Color("#D98299") },   
+      u_colorA: { value: new Color("#FF0000") },   
       u_colorB: { value: new Color("#FDFDFD") }
     }),
     [],
