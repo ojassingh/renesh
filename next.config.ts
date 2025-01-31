@@ -4,6 +4,7 @@ import remarkFrontmatter from 'remark-frontmatter'
 
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  transpilePackages: ['three'],
   /* config options here */
   images: {
     remotePatterns: [
