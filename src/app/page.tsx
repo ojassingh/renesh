@@ -5,6 +5,8 @@ import grain from "@/../public/grain.jpg";
 // import Footer from "@/components/footer";
 import Scene from "@/components/background";
 import { motion } from "motion/react"
+import Image from "next/image";
+import logo from '@/../public/icon.png'
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <main className="relative z-10">
         <Hero />
       </main>
+      <Image src={logo} alt="logo" className="fixed top-4 left-4 h-10 w-10 invert"/>
     </main>
   );
 }
