@@ -104,11 +104,10 @@ float snoise(vec2 v)
 void main() {
   vec3 color = u_bg;
 
-  // float noise1 = snoise(vUv + u_time * (sin(u_mouse.x * 0.001) + 0.2));
-  // float noise2 = snoise(vUv + u_time * (sin(u_mouse.y * 0.001) + 0.2));
-  float noise1 = snoise(vUv + u_time * 0.2 + u_mouse * 0.005);
-float noise2 = snoise(vUv + u_time * 0.3 - u_mouse * 0.005);
-
+  float noise1 = snoise(vUv + u_time * (sin(u_mouse.x * 0.001) + 0.2));
+  float noise2 = snoise(vUv + u_time * (sin(u_mouse.y * 0.001) + 0.2));
+  // float noise1 = snoise(vUv + u_time * 0.2 * sin(u_mouse.x * 0.005) - 0.2);
+  // float noise2 = snoise(vUv + u_time * 0.3 * sin(u_mouse.y * 0.005) - 0.2);
 
   color = mix(color, u_colorA, noise1);
   color = mix(color, u_colorB, noise2);
@@ -130,9 +129,9 @@ const Gradient = () => {
     () => ({
       u_time: { value: 0.0 },
       u_mouse: { value: new Vector2(0, 0) },
-      u_bg: { value: new Color("#F8F9FA") },      
+      u_bg: { value: new Color("#F2F2F2") },      
       u_colorA: { value: new Color("#FF0000") },   
-      u_colorB: { value: new Color("#FDFDFD") }
+      u_colorB: { value: new Color("#F2F2F2") }
     }),
     [],
   );
@@ -201,7 +200,7 @@ const Scene = () => {
         far: 1000,
         position: [0, 0, 1],
       }}
-      className="fixed top-0 left-0 h-screen w-screen"
+      className="fixed top-0 left-0 h-screen w-screen "
     >
       <Gradient />
     </Canvas>
